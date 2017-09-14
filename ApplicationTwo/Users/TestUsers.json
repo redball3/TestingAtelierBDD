@@ -1,0 +1,23 @@
+﻿[
+  {
+    "Username": "JohnSmith",
+    "Password": "Test",
+    "Address": "1 One Way, Leeds",
+    "FirstName": "John",
+    "Surname": "Smith"
+  },
+  {
+    "Username": "JoeBloggs",
+    "Password": "Testing",
+    "Address": "2 One Way, Leeds",
+    "FirstName": "Joe",
+    "Surname": "Bloggs"
+  },
+  {
+    "Username": "JaneBloggs",
+    "Password": "Testing",
+    "Address": "2 One Way, Leeds",
+    "FirstName": "Jane",
+    "Surname": "Bloggs"
+  }
+]
