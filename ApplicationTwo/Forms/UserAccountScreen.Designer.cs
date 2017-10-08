@@ -28,39 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.WelcomeLabel = new System.Windows.Forms.Label();
             this.UserNameLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.SurnameTextBox = new System.Windows.Forms.TextBox();
+            this.FirstNameTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.Username = new System.Windows.Forms.Label();
             this.DobTextBox = new System.Windows.Forms.TextBox();
             this.AddressTextBox = new System.Windows.Forms.TextBox();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.UsernameTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.SurnameTextBox = new System.Windows.Forms.TextBox();
-            this.FirstNameTextBox = new System.Windows.Forms.TextBox();
+            this.UserAccountTabs = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.WelcomeLabel = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.CatPage = new System.Windows.Forms.TabPage();
+            this.CatButton = new System.Windows.Forms.Button();
+            this.CatPictureBox = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            this.UserAccountTabs.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.CatPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CatPictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // WelcomeLabel
-            // 
-            this.WelcomeLabel.AutoSize = true;
-            this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomeLabel.Location = new System.Drawing.Point(12, 23);
-            this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(134, 31);
-            this.WelcomeLabel.TabIndex = 1;
-            this.WelcomeLabel.Text = "Welcome,";
             // 
             // UserNameLabel
             // 
             this.UserNameLabel.AutoSize = true;
             this.UserNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameLabel.Location = new System.Drawing.Point(144, 23);
+            this.UserNameLabel.Location = new System.Drawing.Point(138, 19);
             this.UserNameLabel.Name = "UserNameLabel";
             this.UserNameLabel.Size = new System.Drawing.Size(0, 31);
             this.UserNameLabel.TabIndex = 2;
@@ -79,12 +80,71 @@
             this.groupBox1.Controls.Add(this.AddressTextBox);
             this.groupBox1.Controls.Add(this.PasswordTextBox);
             this.groupBox1.Controls.Add(this.UsernameTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(12, 57);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(421, 198);
+            this.groupBox1.Size = new System.Drawing.Size(536, 198);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Details";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Surname";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 74);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "First Name";
+            // 
+            // SurnameTextBox
+            // 
+            this.SurnameTextBox.Location = new System.Drawing.Point(68, 97);
+            this.SurnameTextBox.Name = "SurnameTextBox";
+            this.SurnameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SurnameTextBox.TabIndex = 11;
+            // 
+            // FirstNameTextBox
+            // 
+            this.FirstNameTextBox.Location = new System.Drawing.Point(68, 71);
+            this.FirstNameTextBox.Name = "FirstNameTextBox";
+            this.FirstNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.FirstNameTextBox.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 162);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "DOB";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 136);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Address";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Password";
             // 
             // Username
             // 
@@ -124,86 +184,106 @@
             this.UsernameTextBox.Size = new System.Drawing.Size(100, 20);
             this.UsernameTextBox.TabIndex = 0;
             // 
-            // label1
+            // UserAccountTabs
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Password";
+            this.UserAccountTabs.Controls.Add(this.tabPage3);
+            this.UserAccountTabs.Controls.Add(this.tabPage1);
+            this.UserAccountTabs.Controls.Add(this.CatPage);
+            this.UserAccountTabs.Location = new System.Drawing.Point(12, 12);
+            this.UserAccountTabs.Name = "UserAccountTabs";
+            this.UserAccountTabs.SelectedIndex = 0;
+            this.UserAccountTabs.Size = new System.Drawing.Size(1128, 805);
+            this.UserAccountTabs.TabIndex = 4;
             // 
-            // label2
+            // tabPage3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 136);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Address";
+            this.tabPage3.AccessibleName = "WelcomeTab";
+            this.tabPage3.Controls.Add(this.WelcomeLabel);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(598, 451);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Welcome";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // WelcomeLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 162);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "DOB";
+            this.WelcomeLabel.AutoSize = true;
+            this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WelcomeLabel.Location = new System.Drawing.Point(109, 30);
+            this.WelcomeLabel.Name = "WelcomeLabel";
+            this.WelcomeLabel.Size = new System.Drawing.Size(325, 146);
+            this.WelcomeLabel.TabIndex = 0;
+            this.WelcomeLabel.Text = "Welcome,\r\njoe bloggs";
+            this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // tabPage1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Surname";
+            this.tabPage1.AccessibleName = "UserAccountDetailsTab";
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.UserNameLabel);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(598, 451);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Account";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // CatPage
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 74);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "First Name";
+            this.CatPage.Controls.Add(this.CatButton);
+            this.CatPage.Controls.Add(this.CatPictureBox);
+            this.CatPage.Location = new System.Drawing.Point(4, 22);
+            this.CatPage.Name = "CatPage";
+            this.CatPage.Padding = new System.Windows.Forms.Padding(3);
+            this.CatPage.Size = new System.Drawing.Size(1120, 779);
+            this.CatPage.TabIndex = 1;
+            this.CatPage.Text = "Look at Cats";
+            this.CatPage.UseVisualStyleBackColor = true;
             // 
-            // SurnameTextBox
+            // CatButton
             // 
-            this.SurnameTextBox.Location = new System.Drawing.Point(68, 97);
-            this.SurnameTextBox.Name = "SurnameTextBox";
-            this.SurnameTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SurnameTextBox.TabIndex = 11;
+            this.CatButton.Location = new System.Drawing.Point(976, 750);
+            this.CatButton.Name = "CatButton";
+            this.CatButton.Size = new System.Drawing.Size(138, 23);
+            this.CatButton.TabIndex = 1;
+            this.CatButton.Text = "Click for Cat";
+            this.CatButton.UseVisualStyleBackColor = true;
+            this.CatButton.Click += new System.EventHandler(this.CatButton_Click);
             // 
-            // FirstNameTextBox
+            // CatPictureBox
             // 
-            this.FirstNameTextBox.Location = new System.Drawing.Point(68, 71);
-            this.FirstNameTextBox.Name = "FirstNameTextBox";
-            this.FirstNameTextBox.Size = new System.Drawing.Size(100, 20);
-            this.FirstNameTextBox.TabIndex = 10;
+            this.CatPictureBox.Location = new System.Drawing.Point(6, 6);
+            this.CatPictureBox.Name = "CatPictureBox";
+            this.CatPictureBox.Size = new System.Drawing.Size(1108, 738);
+            this.CatPictureBox.TabIndex = 0;
+            this.CatPictureBox.TabStop = false;
             // 
             // UserAccountScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 265);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.UserNameLabel);
-            this.Controls.Add(this.WelcomeLabel);
+            this.ClientSize = new System.Drawing.Size(1152, 829);
+            this.Controls.Add(this.UserAccountTabs);
             this.Name = "UserAccountScreen";
             this.Text = "UserAccountScreen";
             this.Load += new System.EventHandler(this.UserAccountScreen_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.UserAccountTabs.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.CatPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CatPictureBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Label UserNameLabel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label Username;
@@ -218,5 +298,12 @@
         private System.Windows.Forms.TextBox SurnameTextBox;
         private System.Windows.Forms.TextBox FirstNameTextBox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TabControl UserAccountTabs;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage CatPage;
+        private System.Windows.Forms.Label WelcomeLabel;
+        private System.Windows.Forms.Button CatButton;
+        private System.Windows.Forms.PictureBox CatPictureBox;
     }
 }

@@ -13,7 +13,7 @@ namespace ApplicationTwo.Forms
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            var loginHelper = new LoginHelper();
+            var loginHelper = new AccountHelper();
             var login = loginHelper.ValidateLogin(UsernameTextBox.Text, PasswordTextBox.Text);
 
             if (login != null)

@@ -6,11 +6,11 @@ using Newtonsoft.Json;
 
 namespace ApplicationTwo.Classes
 {
-    internal class LoginHelper
+    internal class AccountHelper
     {
         private readonly List<UserAccount> _testAccounts;
 
-        public LoginHelper()
+        public AccountHelper()
         {
             using (var sr = new StreamReader(Path.GetFullPath(Settings.Default.UserFile)))
             {
