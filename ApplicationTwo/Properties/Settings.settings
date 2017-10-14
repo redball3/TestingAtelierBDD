@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="UserFile" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Users\TestUsers.json</Value>
+      <Value Profile="(Default)">C:\Users\Richi\OneDrive\Documents\Visual Studio 2017\Projects\TestingAtelierBDD\ApplicationTwo\Users\TestUsers.json</Value>
     </Setting>
   </Settings>
 </SettingsFile>

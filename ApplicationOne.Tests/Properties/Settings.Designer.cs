@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ApplicationTwo.Properties {
+namespace ApplicationOne.Tests.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -23,13 +23,27 @@ namespace ApplicationTwo.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Richi\\OneDrive\\Documents\\Visual Studio 2017\\Projects\\TestingAtelierBDD\\A" +
-            "pplicationTwo\\Users\\TestUsers.json")]
-        public string UserFile {
+        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\..\\ApplicationOne\\bin\\Debug\\ApplicationOne.exe")]
+        public string ApplicationOneDirectory {
             get {
-                return ((string)(this["UserFile"]));
+                return ((string)(this["ApplicationOneDirectory"]));
+            }
+            set {
+                this["ApplicationOneDirectory"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\..\\ApplicationTwo\\bin\\Debug\\ApplicationTwo.exe")]
+        public string ApplicationTwoDirectory {
+            get {
+                return ((string)(this["ApplicationTwoDirectory"]));
+            }
+            set {
+                this["ApplicationTwoDirectory"] = value;
             }
         }
     }
